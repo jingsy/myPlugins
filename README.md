@@ -1,10 +1,11 @@
 # myPlugins
 ## 封装的一些插件
-## swiper 轮播图插件
-## dropdown 下拉菜单插件
+## 1.swiper 轮播图插件
+## 2.dropdown 下拉菜单插件
 
 ### swiper使用
-`$('.demo').swiper({
+```
+$('.demo').swiper({
             imgList : ['../img/pic1.jpg','../img/pic2.jpg','../img/3.jpg'],
             animateType : 'fade',
             changeBtn : true,
@@ -17,10 +18,12 @@
             changeBtn : true,
             showPointBtn : true,
             isAuto:true,
-        });`
+        });
+```        
  
 ### dropdown使用
- `$('#procurement').addDropdown({
+```
+ $('#procurement').addDropdown({
     title: '企业采购',
     colWidth: 56,
     dropDownWidth:140,
@@ -40,4 +43,5 @@
             name: '礼品卡'
         }]
     }]
-});`
+});
+```
