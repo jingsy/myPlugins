@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .wrapper{
+            width: 400px;
+            height: 300px;
+            border:1px solid #000;
+        }    
+        .demo{
+            width: 400px;
+            height: 300px;
+            border:1px solid #000;
+            margin-top:100px; 
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="wrapper"></div>
+    <div class="demo"></div>
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>    
+    <script src="./index.js"></script>
+    <script>
+        
+        $('.demo').swiper({
+            imgList : ['../img/pic1.jpg','../img/pic2.jpg','../img/3.jpg'],
+            animateType : 'fade',
+            changeBtn : true,
+            showPointBtn : true,
+            isAuto:false,
+        });
+        $('.wrapper').swiper({
+            imgList : ['../img/pic1.jpg','../img/pic2.jpg','../img/3.jpg'],
+            animateType : 'animate',
+            changeBtn : true,
+            showPointBtn : true,
+            isAuto:true,
+        });
+    </script>
+</body>
+</html>
